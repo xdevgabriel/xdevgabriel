@@ -270,24 +270,6 @@ flowchart LR
 
 <br>
 
-<!-- ======================= STATS ======================= -->
-<h2 align="center">📊 Estatísticas</h2>
-
-<p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=xdevgabriel&bg_color=0D1117&color=4ADE80&line=22C55E&point=86EFAC&area=true&hide_border=true"
-    width="95%"
-  />
-</p>
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=xdevgabriel&show_icons=true&include_all_commits=true&count_private=true&theme=github_dark&hide_border=true&locale=en" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xdevgabriel&layout=compact&langs_count=8&theme=github_dark&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=xdevgabriel&theme=github-dark&hide_border=true" height="170" />
-</p>
 
 <h3 align="center">🐍 Gráfico de Contribuições</h3>
 
