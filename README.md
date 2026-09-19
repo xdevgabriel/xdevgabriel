@@ -56,36 +56,8 @@
 
 <br>
 
-<!-- ======================= STACK ======================= -->
-
-<h2 align="center">🛠️ Tech Stack</h2>
-
-<h3 align="center">Core</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,go,typescript,javascript&perline=8" />
-</p>
-
-<h3 align="center">Backend & Frameworks</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,react,nextjs&perline=8" />
-</p>
-
-<h3 align="center">Databases & Messaging</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,rabbitmq&perline=8" />
-</p>
-
-<h3 align="center">Infrastructure & Cloud</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,linux,nginx,gcp,git,github&perline=8" />
-</p>
-
+<img src="./assets/tech-stack.svg">
 <br>
-
 <!-- ======================= ENGINEERING FOCUS ======================= -->
 
 <h2 align="center">🚀 Engineering Focus</h2>
