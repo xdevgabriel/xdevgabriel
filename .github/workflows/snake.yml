@@ -20,20 +20,16 @@ jobs:
     steps:
       - name: Generate GitHub Snake
         uses: Platane/snk/svg-only@v3
-
         with:
           github_user_name: ${{ github.repository_owner }}
-
           outputs: |
             dist/github-snake.svg?palette=github-light
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#4ADE80
-          
+
       - name: Publish generated files
         uses: crazy-max/ghaction-github-pages@v4
-
         with:
           build_dir: dist
-          jekyll: false
-
+          target_branch: output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
