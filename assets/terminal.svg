@@ -1,0 +1,190 @@
+<svg
+  width="900"
+  height="390"
+  viewBox="0 0 900 390"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <style>
+
+    .terminal {
+      fill: #020617;
+      stroke: #14532D;
+      stroke-width: 2;
+    }
+
+    .text {
+      fill: #4ADE80;
+      font-family: "JetBrains Mono", "Courier New", monospace;
+      font-size: 15px;
+    }
+
+    .dim {
+      fill: #86EFAC;
+      font-family: "JetBrains Mono", "Courier New", monospace;
+      font-size: 15px;
+    }
+
+    .title {
+      fill: #F0FDF4;
+      font-family: "JetBrains Mono", "Courier New", monospace;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .cursor {
+      fill: #4ADE80;
+      animation: blink 1s infinite;
+    }
+
+    .line {
+      opacity: 0;
+      animation: appear 0.5s forwards;
+    }
+
+    .l1  { animation-delay: 0.5s; }
+    .l2  { animation-delay: 1.0s; }
+    .l3  { animation-delay: 1.5s; }
+    .l4  { animation-delay: 2.0s; }
+    .l5  { animation-delay: 2.5s; }
+    .l6  { animation-delay: 3.0s; }
+    .l7  { animation-delay: 3.5s; }
+    .l8  { animation-delay: 4.0s; }
+    .l9  { animation-delay: 4.5s; }
+    .l10 { animation-delay: 5.0s; }
+    .l11 { animation-delay: 5.5s; }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateX(-8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes blink {
+      0%, 45% {
+        opacity: 1;
+      }
+
+      46%, 100% {
+        opacity: 0;
+      }
+    }
+
+  </style>
+
+  <!-- Terminal -->
+
+  <rect
+    x="5"
+    y="5"
+    width="890"
+    height="380"
+    rx="14"
+    class="terminal"
+  />
+
+  <!-- Header -->
+
+  <text
+    x="28"
+    y="38"
+    class="title"
+  >
+    ┌──[ gabriel@github ]──────────────────────────────────────────────┐
+  </text>
+
+  <!-- Content -->
+
+  <g class="line l1">
+    <text x="28" y="75" class="text">
+      │  $ whoami
+    </text>
+  </g>
+
+  <g class="line l2">
+    <text x="28" y="98" class="dim">
+      │  gabriel
+    </text>
+  </g>
+
+  <g class="line l3">
+    <text x="28" y="135" class="text">
+      │  $ systemctl status engineer
+    </text>
+  </g>
+
+  <g class="line l4">
+    <text x="28" y="165" class="dim">
+      │  ROLE          → Software Engineer
+    </text>
+  </g>
+
+  <g class="line l5">
+    <text x="28" y="188" class="dim">
+      │  FOCUS         → Backend &amp; Distributed Systems
+    </text>
+  </g>
+
+  <g class="line l6">
+    <text x="28" y="211" class="dim">
+      │  LANGUAGES     → Python · Go · TypeScript
+    </text>
+  </g>
+
+  <g class="line l7">
+    <text x="28" y="234" class="dim">
+      │  AI            → LLMs · Agents · Automation
+    </text>
+  </g>
+
+  <g class="line l8">
+    <text x="28" y="257" class="dim">
+      │  ARCHITECTURE  → APIs · Microservices · Event-Driven Systems
+    </text>
+  </g>
+
+  <g class="line l9">
+    <text x="28" y="280" class="dim">
+      │  INFRA         → Docker · Linux · Cloud
+    </text>
+  </g>
+
+  <g class="line l10">
+    <text x="28" y="303" class="dim">
+      │  DATA          → PostgreSQL · MongoDB · Redis
+    </text>
+  </g>
+
+  <g class="line l11">
+    <text x="28" y="342" class="text">
+      │  STATUS        → Building systems that scale.
+    </text>
+  </g>
+
+  <!-- Cursor -->
+
+  <rect
+    x="28"
+    y="355"
+    width="9"
+    height="17"
+    class="cursor"
+  />
+
+  <!-- Bottom -->
+
+  <text
+    x="28"
+    y="378"
+    class="title"
+  >
+    └──────────────────────────────────────────────────────────────────┘
+  </text>
+
+</svg>
