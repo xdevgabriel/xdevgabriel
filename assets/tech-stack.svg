@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1180" viewBox="0 0 1200 1180">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#020617"/>
+    <stop offset=".52" stop-color="#071A12"/>
+    <stop offset="1" stop-color="#020617"/>
+  </linearGradient>
+
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#86EFAC"/>
+    <stop offset=".5" stop-color="#4ADE80"/>
+    <stop offset="1" stop-color="#16A34A"/>
+  </linearGradient>
+
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#67E8F9"/>
+    <stop offset="1" stop-color="#0891B2"/>
+  </linearGradient>
+
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#60A5FA"/>
+    <stop offset="1" stop-color="#2563EB"/>
+  </linearGradient>
+
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#D8B4FE"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient>
+
+  <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FEF08A"/>
+    <stop offset="1" stop-color="#EAB308"/>
+  </linearGradient>
+
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FDBA74"/>
+    <stop offset="1" stop-color="#EA580C"/>
+  </linearGradient>
+
+  <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+    <circle cx="3" cy="3" r="1.8" fill="#4ADE80" opacity=".5"/>
+  </pattern>
+
+  <pattern id="dotsBlue" width="16" height="16" patternUnits="userSpaceOnUse">
+    <circle cx="3" cy="3" r="1.8" fill="#38BDF8" opacity=".5"/>
+  </pattern>
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <style>
+    .card { fill:#09110E; stroke:#183C2A; stroke-width:1.4; }
+    .title { fill:#F0FDF4; font-family:Inter,Arial,sans-serif; font-size:20px; font-weight:700; }
+    .label { fill:#4ADE80; font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; letter-spacing:2.7px; }
+    .desc { fill:#9BAEA3; font-family:Inter,Arial,sans-serif; font-size:12px; }
+    .tech { fill:#E2F4E8; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:600; }
+    .meta { fill:#52665A; font-family:'JetBrains Mono',monospace; font-size:9px; }
+    .icon { fill:#F0FDF4; font-family:'JetBrains Mono',monospace; font-size:16px; font-weight:800; }
+    .line { fill:none; stroke-width:1.7; opacity:.65; }
+    .float { animation:float 4s ease-in-out infinite; }
+    .pulse { animation:pulse 2.8s ease-in-out infinite; }
+    @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    @keyframes pulse {0%,100%{opacity:.25}50%{opacity:.75}}
+  </style>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1200" height="1180" rx="24" fill="url(#bg)"/>
+<circle cx="1080" cy="80" r="220" fill="#16A34A" opacity=".035"/>
+<circle cx="100" cy="1080" r="260" fill="#22C55E" opacity=".025"/>
+
+<!-- HEADER -->
+<line x1="80" y1="55" x2="350" y2="55" stroke="#1F8F58"/>
+<line x1="850" y1="55" x2="1120" y2="55" stroke="#1F8F58"/>
+
+<text x="600" y="62" text-anchor="middle"
+      fill="#4ADE80" font-family="JetBrains Mono,monospace"
+      font-size="15" font-weight="700" letter-spacing="5">
+  &lt;/&gt; ENGINEERING STACK
+</text>
+
+<text x="600" y="101" text-anchor="middle"
+      fill="#F0FDF4" font-family="Inter,Arial,sans-serif"
+      font-size="25" font-weight="700">
+  Technologies behind my systems.
+</text>
+
+<text x="600" y="126" text-anchor="middle"
+      fill="#71867A" font-family="Inter,Arial,sans-serif"
+      font-size="12">
+  Backend · AI · Automation · Distributed Systems · Infrastructure
+</text>
+
+<!-- CARD TEMPLATE SIZE: 350 x 205 -->
+<!-- ROW 1 -->
+
+<!-- PYTHON -->
+<g class="float">
+<rect class="card" x="35" y="160" width="350" height="205" rx="13"/>
+
+<text x="360" y="195" text-anchor="end" class="meta">01 / 12</text>
+<text x="58" y="258" class="label">PYTHON</text>
+<text x="58" y="285" class="title">Backend Engineering</text>
+<text x="58" y="309" class="desc">APIs, automation, workers</text>
+<text x="58" y="326" class="desc">and AI-powered systems.</text>
+<text x="58" y="352" class="tech">FastAPI · Celery · LangChain</text>
+<path d="M275 360 C300 315 330 335 385 275" class="line" stroke="#4ADE80"/>
+<path d="M290 365 C315 325 345 345 400 285" class="line" stroke="#22C55E" opacity=".3"/>
+</g>
+
+<!-- GO -->
+<g class="float" style="animation-delay:.3s">
+<rect class="card" x="425" y="160" width="350" height="205" rx="13"/>
+
+<text x="750" y="195" text-anchor="end" class="meta">02 / 12</text>
+<text x="448" y="258" class="label" fill="#67E8F9">GO</text>
+<text x="448" y="285" class="title">Distributed Services</text>
+<text x="448" y="309" class="desc">Concurrent workers and</text>
+<text x="448" y="326" class="desc">high-performance services.</text>
+<text x="448" y="352" class="tech">Concurrency · APIs · Workers</text>
+<circle cx="700" cy="300" r="72" fill="url(#dotsBlue)" opacity=".28"/>
+<path d="M620 360 C650 320 675 340 720 275" class="line" stroke="#38BDF8"/>
+</g>
+
+<!-- TYPESCRIPT -->
+<g class="float" style="animation-delay:.6s">
+<rect class="card" x="815" y="160" width="350" height="205" rx="13"/>
+
+<text x="1140" y="195" text-anchor="end" class="meta">03 / 12</text>
+<text x="838" y="258" class="label" fill="#60A5FA">TYPESCRIPT</text>
+<text x="838" y="285" class="title">Full-Stack Products</text>
+<text x="838" y="309" class="desc">Type-safe applications and</text>
+<text x="838" y="326" class="desc">modern product interfaces.</text>
+<text x="838" y="352" class="tech">Next.js · React · Node.js</text>
+<path d="M1050 360 C1080 315 1110 340 1170 270" class="line" stroke="#60A5FA"/>
+</g>
+
+<!-- ROW 2 -->
+
+<!-- JAVASCRIPT -->
+<g class="float" style="animation-delay:.9s">
+<rect class="card" x="35" y="385" width="350" height="205" rx="13"/>
+
+<text x="360" y="420" text-anchor="end" class="meta">04 / 12</text>
+<text x="58" y="483" class="label" fill="#FDE047">JAVASCRIPT</text>
+<text x="58" y="510" class="title">Web Runtime</text>
+<text x="58" y="534" class="desc">Interactive applications and</text>
+<text x="58" y="551" class="desc">server-side JavaScript.</text>
+<text x="58" y="577" class="tech">Node.js · Express · React</text>
+<path d="M270 585 L315 530 L345 550 L390 490" class="line" stroke="#FDE047"/>
+</g>
+
+<!-- FASTAPI / BACKEND -->
+<g class="float" style="animation-delay:1.2s">
+<rect class="card" x="425" y="385" width="350" height="205" rx="13"/>
+
+<text x="750" y="420" text-anchor="end" class="meta">05 / 12</text>
+<text x="448" y="483" class="label">BACKEND</text>
+<text x="448" y="510" class="title">APIs &amp; Microservices</text>
+<text x="448" y="534" class="desc">REST APIs, business logic</text>
+<text x="448" y="551" class="desc">and service architecture.</text>
+<text x="448" y="577" class="tech">FastAPI · Express · REST</text>
+<path d="M620 590 C650 545 680 565 735 505" class="line" stroke="#4ADE80"/>
+</g>
+
+<!-- AI -->
+<g class="float" style="animation-delay:1.5s">
+<rect class="card" x="815" y="385" width="350" height="205" rx="13"/>
+
+<text x="1140" y="420" text-anchor="end" class="meta">06 / 12</text>
+<text x="838" y="483" class="label" fill="#C084FC">AI SYSTEMS</text>
+<text x="838" y="510" class="title">LLMs &amp; Agents</text>
+<text x="838" y="534" class="desc">Tool calling, reasoning and</text>
+<text x="838" y="551" class="desc">automated business workflows.</text>
+<text x="838" y="577" class="tech">LangChain · LLMs · Agents</text>
+<circle cx="1080" cy="525" r="70" fill="url(#dots)" opacity=".25"/>
+</g>
+
+<!-- ROW 3 -->
+
+<!-- DATA -->
+<g class="float" style="animation-delay:1.8s">
+<rect class="card" x="35" y="610" width="350" height="205" rx="13"/>
+
+<text x="360" y="645" text-anchor="end" class="meta">07 / 12</text>
+<text x="58" y="708" class="label" fill="#FDE047">DATA</text>
+<text x="58" y="735" class="title">Persistence Layer</text>
+<text x="58" y="759" class="desc">Relational and document data</text>
+<text x="58" y="776" class="desc">for production applications.</text>
+<text x="58" y="802" class="tech">PostgreSQL · MongoDB</text>
+<path d="M275 815 C310 760 345 785 390 715" class="line" stroke="#FDE047"/>
+</g>
+
+<!-- REDIS / RABBITMQ -->
+<g class="float" style="animation-delay:2.1s">
+<rect class="card" x="425" y="610" width="350" height="205" rx="13"/>
+
+<text x="750" y="645" text-anchor="end" class="meta">08 / 12</text>
+<text x="448" y="708" class="label" fill="#FDBA74">ASYNC SYSTEMS</text>
+<text x="448" y="735" class="title">Queues &amp; Workers</text>
+<text x="448" y="759" class="desc">Event-driven processing and</text>
+<text x="448" y="776" class="desc">background task execution.</text>
+<text x="448" y="802" class="tech">Redis · RabbitMQ · Celery</text>
+<path d="M625 815 C655 770 685 790 740 730" class="line" stroke="#FB923C"/>
+</g>
+
+<!-- AUTOMATION -->
+<g class="float" style="animation-delay:2.4s">
+<rect class="card" x="815" y="610" width="350" height="205" rx="13"/>
+
+<text x="1140" y="645" text-anchor="end" class="meta">09 / 12</text>
+<text x="838" y="708" class="label">AUTOMATION</text>
+<text x="838" y="735" class="title">Workflow Infrastructure</text>
+<text x="838" y="759" class="desc">Business automation, integrations</text>
+<text x="838" y="776" class="desc">and event-based workflows.</text>
+<text x="838" y="802" class="tech">n8n · Webhooks · APIs</text>
+<circle cx="1090" cy="755" r="62" fill="url(#dots)" opacity=".28"/>
+</g>
+
+<!-- ROW 4 -->
+
+<!-- DOCKER / LINUX -->
+<g class="float" style="animation-delay:2.7s">
+<rect class="card" x="35" y="835" width="350" height="205" rx="13"/>
+
+<text x="360" y="870" text-anchor="end" class="meta">10 / 12</text>
+<text x="58" y="933" class="label" fill="#67E8F9">CONTAINERS</text>
+<text x="58" y="960" class="title">Docker &amp; Linux</text>
+<text x="58" y="984" class="desc">Containerized deployments and</text>
+<text x="58" y="1001" class="desc">Linux-based infrastructure.</text>
+<text x="58" y="1027" class="tech">Docker · Linux · Compose</text>
+<path d="M270 1040 C310 985 340 1010 390 950" class="line" stroke="#22D3EE"/>
+</g>
+
+<!-- NGINX / CLOUD -->
+<g class="float" style="animation-delay:3s">
+<rect class="card" x="425" y="835" width="350" height="205" rx="13"/>
+
+<text x="750" y="870" text-anchor="end" class="meta">11 / 12</text>
+<text x="448" y="933" class="label" fill="#60A5FA">INFRASTRUCTURE</text>
+<text x="448" y="960" class="title">Cloud &amp; Reverse Proxy</text>
+<text x="448" y="984" class="desc">Deployments, networking and</text>
+<text x="448" y="1001" class="desc">production infrastructure.</text>
+<text x="448" y="1027" class="tech">Nginx · GCP · Cloud</text>
+<path d="M625 1040 C655 995 685 1015 740 950" class="line" stroke="#60A5FA"/>
+</g>
+
+<!-- GIT / GITHUB -->
+<g class="float" style="animation-delay:3.3s">
+<rect class="card" x="815" y="835" width="350" height="205" rx="13"/>
+
+<text x="1140" y="870" text-anchor="end" class="meta">12 / 12</text>
+<text x="838" y="933" class="label" fill="#FDBA74">DEVELOPMENT</text>
+<text x="838" y="960" class="title">Version Control</text>
+<text x="838" y="984" class="desc">Collaboration, source control</text>
+<text x="838" y="1001" class="desc">and engineering workflow.</text>
+<text x="838" y="1027" class="tech">Git · GitHub · CI/CD</text>
+<path d="M1050 1040 L1090 995 L1120 1015 L1170 955" class="line" stroke="#FB923C"/>
+</g>
+
+<!-- FOOTER -->
+<line x1="320" y1="1100" x2="485" y2="1100" stroke="#1F8F58"/>
+<line x1="715" y1="1100" x2="880" y2="1100" stroke="#1F8F58"/>
+
+<text x="600" y="1106" text-anchor="middle"
+      fill="#4ADE80" font-family="JetBrains Mono,monospace"
+      font-size="10" letter-spacing="4">
+  BUILD · SCALE · AUTOMATE
+</text>
+
+<text x="600" y="1130" text-anchor="middle"
+      fill="#52665A" font-family="Inter,Arial,sans-serif"
+      font-size="10">
+  Gabriel Alves · Software Engineer
+</text>
+</svg>
