@@ -47,8 +47,6 @@
 </p>
 
 <br>
-
-<h3 align="center">⚡ Perfil de Engenharia</h3>
 <p align="center">
   <img src="./assets/terminal.svg" width="900" alt="Gabriel Alves Engineering Profile" />
 </p>
